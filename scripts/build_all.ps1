@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "Ravenholm_TLC" `
+  -ModName "Ravenholm: The Lost Chapter" `
+  -ModFolder "Ravenholm- The Lost Chapter" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/ravenholm-the-lost-chapter/Ravenholm-The-Lost-Chapter-Original.zip" `
+  -ModBaseFilesUrlHash "eeeef170ef3fd943a8f4845b9b2d0d42429e95c8363e0ea408c2a584597ae2f0" `
+  -ModReadmePath "RavenholmLC_readme.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
